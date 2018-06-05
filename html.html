@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Webtoon View Page</title>
+<style>
+header, footer, nav, section, article{
+		border: 5px solid #999;
+		border-radius: 8px;
+		margin: 4px;
+		padding: 10px;
+		position: relative;
+}
+header{
+		height: 100px;
+		width: 97%;
+		background-color: green;
+}	
+nav{
+		float: left;
+		background-color: goldenrod;
+		width: 12%;
+		height: 900px;
+		overflow: auto;
+}
+section{
+		float: left;
+		background-color: red;
+		width: 81%;
+		height: 190px;
+}
+article{
+		float: left;
+		background-color: grey;
+		width: 81%;
+		height: 670px;
+		overflow: auto;
+}
+td{
+	text-align: center;
+}
+footer{
+		height: 20px;
+		background-color: blue;
+		position: relative;
+		clear: both;
+}
+ul{
+	border: 2px solid #555;
+}
+h1{
+    text-shadow: 2px 2px 10px red;
+}
+.button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+	<div>
+		<header>
+			<h1 style="text-align: left; font-size: 50px; color: white;"> INHA 웹툰 &nbsp;
+				<input style="font-size: 15px; width: 300px; text-align: center;" type="text" placeholder="제목/작가명을 입력하세요." name="webtoon_name">
+					<input type="submit" class="button" value="검색"> 
+						<span style="float:right; font-size: 12px;"> 관리자 로그인</span>
+							<span style="float:right; margin-right: 5px; margin-left: 5px;"> <input type="reset" class="button" value="CANCEL"></span>
+								<span style="float:right; margin-left: 5px;"> <input type="submit" class="button" value="LOGIN"></span>
+									<span style="float:right; margin-left: 5px;"> <input style="font-size: 10px; text-align: center;" type="password" placeholder="비밀번호" name="pwd"></span>
+										<span style="float:right; margin-left: 5px;"> <input style="font-size: 10px; text-align: center;" type="text" placeholder="ID" name="id"></span>
+										
+			</h1>
+		</header>
+		<nav>
+			<ul>
+				<br><li><a href="">전체게시글 보기 <br><br> </a></li> 
+				<li><a href="">#게시판이름1  <br><br> </a></li> 
+				<li><a href="">#게시판이름2  <br><br> </a></li> 
+				<li><a href="">#게시판이름3  <br><br> </a></li> 
+				<li><a href="">#게시판이름4  <br><br> </a></li> 
+				<li><a href="">#게시판이름5  <br><br> </a></li> 
+				<li><a href="">#게시판이름6  <br><br> </a></li> 
+				<li><a href="">#게시판이름7  <br><br> </a></li>
+				<li><a href="">#게시판이름8  <br><br> </a></li>
+				<li><a href="">#게시판이름9 <br><br> </a></li> 
+				<li><a href="">#게시판이름10  <br><br> </a></li>
+				<li><a href="">#게시판이름11 <br><br> </a></li>
+			</ul>
+		</nav>
+		<section>
+			<p style="color: black"> <b>[선택된 만화의 세부 정보 보기]</b> </p>
+				 <div style="float: left"> <img src="images/main_image.png" alt="NO image file" style="height: 130px; width: 150px;"> </div>
+					<div style="float: left; margin-left: 10px;"> <span style="color: white; font-size: 20px;"> &nbsp; 유미의 세포들 <br><br><br> </span>
+						<span style="color: white; font-size: 15px;"> &nbsp;&nbsp; 장르 : 에피소드 &nbsp;&nbsp; 작가 : 이동건 <br> </span> </div>
+							<div style="float: center;"><span style="color: white; font-size: 15px; margin-right: 340px;"> <br>유미와 그녀의 세포들 이야기.<br><br> 이동건 작가의 컷툰 신작! </span></div>
+								<span> <button type="button" class="button" style="float: right; margin-left: 5px;"> 선택된 만화 정보 수정 </button></span>
+									<span> <button type="button" class="button" style="float: right; margin-left: 5px;"> 선택된 만화 삭제 </button></span>
+										<span> <button type="button" class="button" style="float: right; margin-left: 5px;"> 새로운 회차 등록 </button></span>
+		</section>
+		<article>
+			<table border="1" style="width: 100%">
+				<tr> 
+					<td> 이미지 </td>
+					<td> 제목 </td>
+					<td> 등록일 </td>
+				</tr>
+				<tr> 
+					<td> <img src="images/255.png" alt="NO image file" style="height: 70px; width: 70px;"> </td>
+					<td> 255화 댓글 </td>
+					<td> 2017.09.08 17:33 <input type="button" value="수정" class="button" style="margin-left: 15px"> <input type="button" class="button" value="삭제"> </td>
+				</tr>
+				<tr> 
+					<td> <img src="images/254.png" alt="NO image file" style="height: 70px; width: 70px;"> </td>
+					<td> 254화 자존심 </td>
+					<td> 2017.09.05 18:50 <input type="button" value="수정" class="button" style="margin-left: 15px"> <input type="button" class="button" value="삭제"> </td>
+				</tr>
+				<tr> 
+					<td> <img src="images/253.png" alt="NO image file" style="height: 70px; width: 70px;"> </td>
+					<td> 253화 유미와 바비의 저녁식사 2부 </td>
+					<td> 2017.09.01 21:35 <input type="button" value="수정" class="button" style="margin-left: 15px"> <input type="button" class="button" value="삭제"> </td>
+				</tr>
+				<tr>
+					<td> <img src="images/252.png" alt="NO image file" style="height: 70px; width: 70px;"> </td>
+					<td> 252화 유미와 바비의 저녁식사 1부 </td>
+					<td> 2017.08.29 18:24 <input type="button" value="수정" class="button" style="margin-left: 15px"> <input type="button" class="button" value="삭제"> </td>
+				</tr>
+				<tr>
+					<td> <img src="images/251.png" alt="NO image file" style="height: 70px; width: 70px;"> </td>
+					<td> 251화 섬세한 관찰자 </td>
+					<td> 2017.08.28 19:10 <input type="button" value="수정" class="button" style="margin-left: 15px"> <input type="button" class="button" value="삭제"> </td>
+				</tr>
+				<tr>
+					<td> <img src="images/250.png" alt="NO image file" style="height: 70px; width: 70px;"> </td>
+					<td> 250화 후회가 만들어 낸 스킬 </td>
+					<td> 2017.08.27 15:30 <input type="button" value="수정" class="button" style="margin-left: 15px"> <input type="button" class="button" value="삭제"> </td>
+				</tr>
+				<tr>
+					<td> <img src="images/249.png" alt="NO image file" style="height: 70px; width: 70px;"> </td>
+					<td> 249화 유미의 추리 </td>
+					<td> 2017.08.26 12:14 <input type="button" value="수정" class="button" style="margin-left: 15px"> <input type="button" class="button" value="삭제"> </td>
+				</tr>
+				<tr>
+					<td> <img src="images/248.png" alt="NO image file" style="height: 70px; width: 70px;"> </td>
+					<td> 248화 사건을 접수한다! </td>
+					<td> 2017.08.25 19:47 <input type="button" value="수정" class="button" style="margin-left: 15px"> <input type="button" class="button" value="삭제"> </td>
+				</tr>
+			</table>
+		</article>
+		<footer><span style="color: white; float: left;"> 이용약관 | 개인정보처리방침 | 책임의 한계와 법적 고지 | 고객센터 | 웹툰 광고 문의 </span>
+					<span style="color: white; float: right"> 웹툰 고객센터 | 웹툰 사업 문의 &copy; </span>
+		</footer>	
+	</div>
+</body>
+</html>
